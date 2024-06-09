@@ -1,9 +1,10 @@
-export const playerStore = defineStore('players', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+import axios from 'axios'
 
-  return { count, doubleCount, increment }
-})
+export const playerStore = defineStore('players', () => {})
+
+export default class playerStore {
+   
+    async getPlayerById(id: string) {
+    await axios.get(`/api/player/${id}`)
+  }
+}

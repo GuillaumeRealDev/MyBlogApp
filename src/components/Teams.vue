@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <Teams />
-  </main>
+  <main>the teams view or something</main>
 </template>
 
-<script></script>
+<script setup lang="ts"></script>
